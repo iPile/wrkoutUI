@@ -23,6 +23,9 @@ Text("wrkoutButton")
     .font(.wrkoutButton)
 ```
 
+![typography](https://user-images.githubusercontent.com/43062515/85478040-7ff2ff80-b589-11ea-803f-f3abed9ebc9c.png)
+
+
 ### Colorgraphy
 
 Available colors:
@@ -41,6 +44,8 @@ Usage:
 Circle()
     .fill(Color.wrkoutOrange)
 ```
+
+![colorgraphy](https://user-images.githubusercontent.com/43062515/85478211-d06a5d00-b589-11ea-924c-e796bd2806ff.png)
 
 ### Animations
 
@@ -81,6 +86,10 @@ WrkoutTextField(placeHolderText: "This is a wrkout text field",
                 textInputBinding: $textBinding,
                 errorText: "And its placehoder text")
 ```
+
+![wrkouttextfield](https://user-images.githubusercontent.com/43062515/85478262-e9730e00-b589-11ea-9c66-3bf91d95967c.png)
+
+
 ### Styles
 
 #### Button Styles
@@ -102,6 +111,8 @@ Button(action: {}) {
                                disabled: false))
 ```
 
+![filledButton](https://user-images.githubusercontent.com/43062515/85478324-027bbf00-b58a-11ea-9f8d-8f8cb8e5dd58.png)
+
 ### Backgrounds
 
 #### WrkoutBackground
@@ -116,3 +127,5 @@ Usage:
 AnyView()
   .background(WrkoutBackground())
 ```
+
+![wrkoutBackground](https://user-images.githubusercontent.com/43062515/85478368-17585280-b58a-11ea-8f2e-424d9f3389de.png)

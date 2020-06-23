@@ -8,12 +8,12 @@
 
 import SwiftUI
 
-struct FilledButtonStyle: ButtonStyle {
-    var backgroundColor: Color
-    var textColor: Color
-    var disabled: Bool
+public struct FilledButtonStyle: ButtonStyle {
+    public var backgroundColor: Color
+    public var textColor: Color
+    public var disabled: Bool
     
-    func makeBody(configuration: Configuration) -> some View {
+    public func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .frame(minWidth: 0, maxWidth: .infinity)
             .font(.wrkoutButton)

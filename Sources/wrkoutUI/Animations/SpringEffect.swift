@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-extension Animation {
+public extension Animation {
     static var springEffect: Animation {
         Animation.spring(dampingFraction: 0.4)
             .speed(1.5)

@@ -9,10 +9,10 @@
 import Foundation
 import SwiftUI
 
-struct LineView: View {
+public struct LineView: View {
     let color: Color = .wrkoutDarkGray
     
-    var body: some View {
+    public var body: some View {
             ZStack {
                 LinePath()
                     .stroke(self.color)
@@ -22,8 +22,8 @@ struct LineView: View {
     }
 }
 
-struct LinePath: Shape {
-    func path(in rect: CGRect) -> Path {
+public struct LinePath: Shape {
+    public func path(in rect: CGRect) -> Path {
         var path = Path()
         
         let leftPoint = CGPoint(x: rect.minX, y: 0)

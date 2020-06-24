@@ -8,11 +8,11 @@
 
 import SwiftUI
 
-struct WrkoutBackground: View {
-    var cornerRadius: CGFloat = 24
-    var opacity: Double = 1
+public struct WrkoutBackground: View {
+    public var cornerRadius: CGFloat = 24
+    public var opacity: Double = 1
     
-    var body: some View {
+    public var body: some View {
         ZStack {
             Color.wrkoutOcean
                 .opacity(opacity)
@@ -22,8 +22,8 @@ struct WrkoutBackground: View {
     }
 }
 
-struct WrkoutShadowBackground: View {
-    var body: some View {
+public struct WrkoutShadowBackground: View {
+    public var body: some View {
         Color.white
             .clipShape(RoundedRectangle(cornerRadius: 24))
             .shadow(color: .wrkoutOcean, radius: 1, x: 1, y: 1)

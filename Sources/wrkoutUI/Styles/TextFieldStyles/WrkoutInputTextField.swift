@@ -8,10 +8,10 @@
 
 import SwiftUI
 
-struct WrkoutInputTextField: ViewModifier {
-    var font: Font = .wrkoutSmall
+public struct WrkoutInputTextField: ViewModifier {
+    public var font: Font = .wrkoutSmall
     
-    func body(content: Content) -> some View {
+    public func body(content: Content) -> some View {
         content
             .frame(minWidth: 0, maxWidth: .infinity)
             .font(font)

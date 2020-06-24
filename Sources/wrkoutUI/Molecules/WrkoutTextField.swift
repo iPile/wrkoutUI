@@ -8,13 +8,13 @@
 
 import SwiftUI
 
-struct WrkoutTextField: View {
+public struct WrkoutTextField: View {
     var placeHolderText: String
     var textInputBinding: Binding<String>
     var errorText: String
     var isSecure: Bool = false
     
-    var body: some View {
+    public var body: some View {
         VStack(alignment: .leading) {
             if isSecure {
                 SecureField(placeHolderText, text: textInputBinding)

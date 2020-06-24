@@ -28,10 +28,3 @@ public struct WrkoutBackground: View {
     }
 }
 
-public struct WrkoutShadowBackground: View {
-    public var body: some View {
-        Color.white
-            .clipShape(RoundedRectangle(cornerRadius: 24))
-            .shadow(color: .wrkoutOcean, radius: 1, x: 1, y: 1)
-    }
-}

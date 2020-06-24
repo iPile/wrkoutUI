@@ -11,7 +11,6 @@ import SwiftUI
 
 struct Preview: View {
     @State var textBinding = ""
-    
     @State var scaleFonts: Bool = false
     
     var body: some View {

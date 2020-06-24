@@ -12,7 +12,17 @@ public struct WrkoutTextField: View {
     var placeHolderText: String
     var textInputBinding: Binding<String>
     var errorText: String
-    var isSecure: Bool = false
+    let isSecure: Bool
+    
+    public init(placeHolderText: String,
+                textInputBinding: Binding<String>,
+                errorText: String,
+                isSecure: Bool = false) {
+        self.placeHolderText = placeHolderText
+        self.textInputBinding = textInputBinding
+        self.errorText = errorText
+        self.isSecure = isSecure
+    }
     
     public var body: some View {
         VStack(alignment: .leading) {

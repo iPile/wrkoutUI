@@ -9,9 +9,17 @@
 import SwiftUI
 
 public struct FilledButtonStyle: ButtonStyle {
-    public var backgroundColor: Color
-    public var textColor: Color
-    public var disabled: Bool
+    let backgroundColor: Color
+    let textColor: Color
+    var disabled: Bool
+    
+    public init(backgroundColor: Color,
+                textColor: Color,
+                disabled: Bool) {
+        self.backgroundColor = backgroundColor
+        self.textColor = textColor
+        self.disabled = disabled
+    }
     
     public func makeBody(configuration: Configuration) -> some View {
         configuration.label

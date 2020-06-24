@@ -12,6 +12,10 @@ import SwiftUI
 public struct LineView: View {
     let color: Color = .wrkoutDarkGray
     
+    public init(color: Color) {
+        self.color = color
+    }
+    
     public var body: some View {
             ZStack {
                 LinePath()

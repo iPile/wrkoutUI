@@ -9,8 +9,14 @@
 import SwiftUI
 
 public struct WrkoutBackground: View {
-    public var cornerRadius: CGFloat = 24
-    public var opacity: Double = 1
+    var cornerRadius: CGFloat = 24
+    var opacity: Double = 1
+    
+    public init(cornerRadius: CGFloat,
+                opacity: Double) {
+        self.cornerRadius = cornerRadius
+        self.opacity = opacity
+    }
     
     public var body: some View {
         ZStack {

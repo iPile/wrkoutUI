@@ -9,11 +9,11 @@
 import SwiftUI
 
 public struct WrkoutBackground: View {
-    var cornerRadius: CGFloat = 24
-    var opacity: Double = 1
+    public var cornerRadius: CGFloat
+    public var opacity: Double
     
-    public init(cornerRadius: CGFloat,
-                opacity: Double) {
+    public init(cornerRadius: CGFloat = 24,
+                opacity: Double = 1) {
         self.cornerRadius = cornerRadius
         self.opacity = opacity
     }

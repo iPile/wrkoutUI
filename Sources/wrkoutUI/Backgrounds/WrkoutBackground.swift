@@ -20,7 +20,7 @@ public struct WrkoutBackground: View {
     
     public var body: some View {
         ZStack {
-            Color.wrkoutOcean
+            Color.white
                 .opacity(opacity)
                 .cornerRadius(self.cornerRadius)
                 .overlay(RoundedRectangle(cornerRadius: cornerRadius).stroke(Color.wrkoutDarkGray, lineWidth: 0.5))

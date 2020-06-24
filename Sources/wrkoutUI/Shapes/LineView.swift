@@ -10,9 +10,9 @@ import Foundation
 import SwiftUI
 
 public struct LineView: View {
-    let color: Color = .wrkoutDarkGray
+    public let color: Color 
     
-    public init(color: Color) {
+    public init(color: Color = .wrkoutDarkGray) {
         self.color = color
     }
     

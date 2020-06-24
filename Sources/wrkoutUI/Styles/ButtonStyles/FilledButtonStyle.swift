@@ -9,9 +9,9 @@
 import SwiftUI
 
 public struct FilledButtonStyle: ButtonStyle {
-    let backgroundColor: Color
-    let textColor: Color
-    var disabled: Bool
+    public let backgroundColor: Color
+    public let textColor: Color
+    public var disabled: Bool
     
     public init(backgroundColor: Color,
                 textColor: Color,

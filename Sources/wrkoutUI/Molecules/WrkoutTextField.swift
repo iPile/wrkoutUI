@@ -9,10 +9,10 @@
 import SwiftUI
 
 public struct WrkoutTextField: View {
-    var placeHolderText: String
-    var textInputBinding: Binding<String>
-    var errorText: String
-    let isSecure: Bool
+    public var placeHolderText: String
+    public var textInputBinding: Binding<String>
+    public var errorText: String
+    public let isSecure: Bool
     
     public init(placeHolderText: String,
                 textInputBinding: Binding<String>,

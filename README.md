@@ -84,7 +84,7 @@ Usage:
 ```objective-c
 WrkoutTextField(placeHolderText: "This is a wrkout text field",
                 textInputBinding: $textBinding,
-                errorText: "And its placehoder text")
+                errorText: "And its error text")
 ```
 
 ![wrkouttextfield](https://user-images.githubusercontent.com/43062515/85478262-e9730e00-b589-11ea-9c66-3bf91d95967c.png)

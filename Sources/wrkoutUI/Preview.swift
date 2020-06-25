@@ -67,7 +67,7 @@ struct Preview: View {
             LineView()
             WrkoutTextField(placeHolderText: "This is a wrkout text field",
                             textInputBinding: $textBinding,
-                            errorText: "And its placehoder text")
+                            errorText: "And its error text")
             LineView()
             HStack {
                 Button(action: {}) {

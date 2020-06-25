@@ -87,7 +87,7 @@ WrkoutTextField(placeHolderText: "This is a wrkout text field",
                 errorText: "And its error text")
 ```
 
-![wrkouttextfield](https://user-images.githubusercontent.com/43062515/85478262-e9730e00-b589-11ea-9c66-3bf91d95967c.png)
+![wrkoutTextField](https://user-images.githubusercontent.com/43062515/85650382-70e87c00-b673-11ea-8de7-944dbc6d2ac3.jpg)
 
 
 ### Styles

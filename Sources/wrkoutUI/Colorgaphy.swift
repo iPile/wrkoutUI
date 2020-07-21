@@ -13,7 +13,8 @@ public extension Color {
     static let wrkoutBlue = Color(red: 8/255, green: 193/255, blue: 1)
     static let wrkoutGreen = Color(red: 7/255, green: 190/255, blue: 26/255)
     static let wrkoutGray = Color(red: 220/255, green: 220/255, blue: 220/255)
-    static let wrkoutOrange = Color(red: 255/255, green: 119/255, blue: 0/255).opacity(0.9)
+    static let wrkoutOrange = Color(red: 221/225, green: 166/255, blue: 81/225)
+    static let wrkoutOrangeBackground = Color(red: 255/225, green: 201/255, blue: 116/225)
     static let wrkoutOcean = Color(red: 181/255, green: 233/255, blue: 244/255).opacity(0.2)
     
     // Dark shades

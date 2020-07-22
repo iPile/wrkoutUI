@@ -24,7 +24,7 @@ public struct FilledButtonStyle: ButtonStyle {
     public func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .frame(minWidth: 0, maxWidth: .infinity)
-            .font(.wrkoutButton)
+            .font(.wrkoutButton())
             .padding(.vertical, 12)
             .foregroundColor(textColor)
             .background(backgroundColor)

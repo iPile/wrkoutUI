@@ -8,10 +8,10 @@
 
 import SwiftUI
 
-public struct WrkoutInputTextField: ViewModifier {
+public struct WrkoutInputTextFieldModifier: ViewModifier {
     public let font: Font
     
-    public init(font: Font = .wrkoutSmall) {
+    public init(font: Font = .wrkoutSmall()) {
         self.font = font
     }
     

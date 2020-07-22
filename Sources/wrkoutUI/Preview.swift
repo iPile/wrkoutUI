@@ -17,17 +17,17 @@ struct Preview: View {
         VStack(alignment: .leading) {
             VStack(alignment:. leading) {
                 Text("wrkoutButton")
-                    .font(.wrkoutButton)
+                    .font(.wrkoutButton())
                 Text("wrkoutExtraSmall")
-                    .font(.wrkoutExtraSmall)
+                    .font(.wrkoutExtraSmall())
                 Text("wrkoutSmall")
-                    .font(.wrkoutSmall)
+                    .font(.wrkoutSmall())
                 Text("wrkoutMedium")
-                    .font(.wrkoutMedium)
+                    .font(.wrkoutMedium())
                 Text("wrkoutLarge")
-                    .font(.wrkoutLarge)
+                    .font(.wrkoutLarge())
                 Text("wrkoutTitle")
-                    .font(.wrkoutTitle)
+                    .font(.wrkoutTitle())
             }
             .padding(8)
             .background(WrkoutBackground())
@@ -58,6 +58,9 @@ struct Preview: View {
                     .fill(Color.wrkoutGreen)
                     .frame(width: 20, height: 20)
                 Circle()
+                    .fill(Color.wrkoutOrangeBackground)
+                    .frame(width: 20, height: 20)
+                Circle()
                     .fill(Color.wrkoutOrange)
                     .frame(width: 20, height: 20)
                 Circle()
@@ -65,9 +68,11 @@ struct Preview: View {
                     .frame(width: 20, height: 20)
             }
             LineView()
-            WrkoutTextField(placeHolderText: "This is a wrkout text field",
-                            textInputBinding: $textBinding,
-                            errorText: "And its error text")
+            WrkoutInputFieldWithError(placeHolderText: "This is a wrkout text field",
+                                      textInputBinding: $textBinding,
+                                      errorText: "And its error text")
+                .padding(4)
+                .background(WrkoutBackground())
             LineView()
             HStack {
                 Button(action: {}) {
@@ -79,7 +84,7 @@ struct Preview: View {
             }
         }
         .padding(.horizontal, 40)
-
+        
     }
 }
 

@@ -11,22 +11,22 @@ import SwiftUI
 public struct WrkoutBackground: View {
     public var cornerRadius: CGFloat
     public var opacity: Double
-    public var color: Color
+    public var strokeColor: Color
     
-    public init(cornerRadius: CGFloat = 24,
+    public init(cornerRadius: CGFloat = 12,
                 opacity: Double = 1,
-                color: Color = .white) {
+                strokeColor: Color = .wrkoutGray) {
         self.cornerRadius = cornerRadius
         self.opacity = opacity
-        self.color = color
+        self.strokeColor = strokeColor
     }
     
     public var body: some View {
         ZStack {
-            color
+            Color.white
                 .opacity(opacity)
                 .cornerRadius(self.cornerRadius)
-                .overlay(RoundedRectangle(cornerRadius: cornerRadius).fill(color))
+                .overlay(RoundedRectangle(cornerRadius: cornerRadius).stroke(strokeColor, lineWidth: 0.5))
         }
     }
 }

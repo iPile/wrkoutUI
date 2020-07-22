@@ -9,11 +9,27 @@
 import SwiftUI
 
 public extension Font {
-    static let wrkoutButton = Font.system(size: 18, weight: .regular, design: .rounded)
-
-    static let wrkoutExtraSmall = Font.system(size: 14, weight: .medium, design: .default)
-    static let wrkoutSmall = Font.system(size: 18, weight: .medium, design: .default)
-    static let wrkoutMedium = Font.system(size: 22, weight: .medium, design: .default)
-    static let wrkoutLarge = Font.system(size: 26, weight: .medium, design: .default)
-    static let wrkoutTitle = Font.system(size: 34, weight: .medium, design: .default)
+    static func wrkoutButton(weight: Font.Weight = .regular) -> Font {
+        return Font.system(size: 18, weight: weight, design: .rounded)
+    }
+    
+    static func wrkoutExtraSmall(weight: Font.Weight = .regular) -> Font {
+        return Font.system(size: 14, weight: weight, design: .default)
+    }
+    
+    static func wrkoutSmall(weight: Font.Weight = .regular) -> Font {
+        return Font.system(size: 18, weight: weight, design: .default)
+    }
+    
+    static func wrkoutMedium(weight: Font.Weight = .regular) -> Font {
+        return Font.system(size: 22, weight: weight, design: .default)
+    }
+    
+    static func wrkoutLarge(weight: Font.Weight = .regular) -> Font {
+        return Font.system(size: 26, weight: weight, design: .default)
+    }
+    
+    static func wrkoutTitle(weight: Font.Weight = .regular) -> Font {
+        return Font.system(size: 34, weight: weight, design: .default)
+    }
 }

@@ -8,34 +8,37 @@
 
 import SwiftUI
 
-public struct WrkoutTextField: View {
+public struct WrkoutInputFieldWithError: View {
     public var placeHolderText: String
     public var textInputBinding: Binding<String>
     public var errorText: String
     public let isSecure: Bool
+    public let font: Font
     
     public init(placeHolderText: String,
                 textInputBinding: Binding<String>,
                 errorText: String,
-                isSecure: Bool = false) {
+                isSecure: Bool = false,
+                font: Font = .wrkoutSmall()) {
         self.placeHolderText = placeHolderText
         self.textInputBinding = textInputBinding
         self.errorText = errorText
         self.isSecure = isSecure
+        self.font = font
     }
     
     public var body: some View {
         VStack(alignment: .leading) {
             if isSecure {
                 SecureField(placeHolderText, text: textInputBinding)
-                    .modifier(WrkoutInputTextField())
+                    .modifier(WrkoutInputTextFieldModifier(font: font))
             } else {
                 TextField(placeHolderText, text: textInputBinding)
-                    .modifier(WrkoutInputTextField())
+                    .modifier(WrkoutInputTextFieldModifier())
             }
             
             Text(errorText)
-                .font(.wrkoutExtraSmall)
+                .font(.wrkoutExtraSmall())
                 .lineLimit(2)
                 .foregroundColor(.red)
         }
